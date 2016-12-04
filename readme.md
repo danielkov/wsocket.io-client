@@ -1,6 +1,6 @@
 # Wsocket.io Client
 
-This is a client-side wrapper for the WebSocket native browser API. It makes it a lot easier to use WebSockets with Node JS by providing a simple to use API. Take a look at [https://github.com/danielkov/wsocket.io-server](wsocket.io-server) or [https://github.com/danielkov/wsocket.io](wsocket.io) for a full integration example.
+This is a client-side wrapper for the WebSocket native browser API. It makes it a lot easier to use WebSockets with Node JS by providing a simple to use API. Take a look at [wsocket.io-server](https://github.com/danielkov/wsocket.io-server) or [wsocket.io](https://github.com/danielkov/wsocket.io) for a full integration example.
 
 ### Browser support
 
