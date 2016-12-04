@@ -62,7 +62,7 @@ ws.all((name, data) => {
 
 This method returns `this`, for easy chaining.
 
-### `.ofAll()`
+### `.offAll()`
 Removes all event listeners from the WebSocket connection. Example usage:
 
 ```js
