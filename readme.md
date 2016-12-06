@@ -93,3 +93,23 @@ This method returns `this`, for easy chaining.
 Closes open WebSocket connection if there is one and executes callback. If there aren't any open connections the callback will receive an error. If no callback is provided an Error will be thrown.
 
 This method returns `this`, for easy chaining.
+
+### Extending the Constructor class
+Because both the server, the socket and the client are just ES6 classes, all ES6 features also work on them by standard. For example you could do something like this:
+
+```js
+import { Client } from 'wsocket.io-client';
+
+// This is the minimum requirement for extending the class.
+class AwesomeClient extends Client {
+  constructor () {
+    super('ws://www.awesome-only.com:4200');
+  }
+}
+
+let aws = new AwesomeClient();
+
+aws.on('awesome-message', data => {
+  console.log('Received an awesome message: ' + data.message);
+})
+```
